@@ -1,14 +1,34 @@
+@charset  "utf-8";
 $breakpoints: (
   // キー   値
-  'sm': 'screen and (min-width: 576px)',
+  'sm': 'screen and (max-width: 767px)',
   'md': 'screen and (min-width: 768px)',
-  'lg': 'screen and (min-width: 992px)',
-  'xl': 'screen and (min-width: 1200px)'
 ) !default;
 
 @mixin mq($breakpoint: md) {
   @media  #{map-get($breakpoints, $breakpoint)} {
     // この中をカスタムできる
     @content;
+  }
+}
+
+// colors
+
+$primary-color: #3EA1D1;
+$font-color: #333;
+
+// common style
+
+// pcのときのみ表示するクラス
+@include mq(sm) {
+  .is-pc {
+    display: none;
+  }
+}
+
+// スマホ時のみ表示するクラス
+@include mq(md) {
+  .is-sp {
+    display: none;
   }
 }
