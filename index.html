@@ -27,7 +27,7 @@
 </head>
 <body class="drawer drawer--right">
   <header class="header">
-    <div class="header-inner">
+    <div class="header-inner inner">
       <h1 class="header-logo"><img src="./img/logo.png" alt="sobolon"></h1>
       <button type="button" class="drawer-toggle drawer-hamburger">
         <span class="sr-only">toggle navigation</span>
@@ -57,24 +57,100 @@
   <!-- /.header -->
 
   <main class="main">
-    <div class="top">
-
+    <div class="top inner">
+      <div class="top-picture"></div>
+      <div class="top-message">
+        <!-- brはpcのみ適用されるのでクラスを設けて分ける -->
+        <div class="top-message-title">“可愛い” で <br class="is-pc">地球を守る！</div>
+        <div class="top-message-text">海洋マイクロプラスチックを素材とした ハンドメイドアクセサリー「sobolon」</div>
+      </div>
     </div>
     <!-- /.top -->
-    <section class="concept">
-
+    <!-- id conceptも付与する -->
+    <section id="concept" class="concept inner">
+      <h2 class="util-title">Concept</h2>
+      <div class="concept-inner">
+        <div class="concept-picture"><img src="./img/concept-1.png" alt=""></div>
+        <div class="concept-message">
+          <p class="concept-message-title">可愛くてステキなのは当たり前。<br> 地球にやさしくあるのも当たり前。</p>
+          <p class="concept-message-text">「sobolon」は、海洋汚染の要因であるマイクロプラスチックを回収し、それらを素材としたハンドメイドアクセサリーを製作しているブランドです。</p>
+        </div>
+      </div>
     </section>
     <!-- /.concept -->
-    <section class="feature">
-
+    <section id="feature" class="feature inner">
+      <h2 class="util-title">Feature</h2>
+      <!-- リストでコーディング -->
+      <ul class="feature-list">
+        <li class="feature-item">
+          <a href="#" class="feature-item-link">
+            <div class="feature-item-picture"><img src="/img/feature-1.png" alt=""></div>
+            <div class="feature-item-body">
+              <p class="feature-item-title">素材は海で採れた<br>マイクロプラスチック</p>
+            </div>
+          </a>
+        </li>
+        <li class="feature-item">
+          <a href="#" class="feature-item-link">
+            <div class="feature-item-picture"><img src="./img/feature-2.png" alt=""></div>
+            <div class="feature-item-body">
+              <p class="feature-item-title">個性あふれる<br>“可愛い”デザイン</p>
+            </div>
+          </a>
+        </li>
+        <li class="feature-item">
+          <a href="#" class="feature-item-link">
+            <div class="feature-item-picture"><img src="./img/feature-3.png" alt=""></div>
+            <div class="feature-item-body">
+              <p class="feature-item-title">世界にひとつだけの<br>一点物アクセサリー</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </section>
     <!-- /.feature -->
     <section class="about">
-
+      <div class="about-inner inner">
+        <p class="about-title">消費者である私たちが、<br>地球環境のためにできることは何か？</p>
+        <p class="about-text">そんな視点からこのブランドは生まれました。<br>オシャレを楽しむ気持ちを大切にしながらも、 <br class="is-pc">ただ可愛いだけじゃない環境にやさしいアクセサリーを選ぶ人が増えていったら…<br>その変化は少しずつ、だけども本質的に、<br>この世界をHappyに変えていくのだと、私たちは考えます。</p>
+      </div>
     </section>
     <!-- /.about -->
-    <section class="products">
-
+    <section class="products inner">
+      <h2 class="util-title">Products</h2>
+      <!-- リストでコーディング -->
+      <ul class="products-list">
+        <li class="products-item">
+          <a href="#" class="products-item-link">
+            <div class="products-item-picture"><img src="/img/product-1.png" alt=""></div>
+            <div class="products-item-body">
+              <p class="products-item-title">【しかくイヤリング】海洋マイクロプラスチックを使ったハンドメイドイヤリング(全7色)</p>
+              <p class="products-item-cost">￥3,695</p>
+            </div>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#" class="products-item-link">
+            <div class="products-item-picture"><img src="./img/product-2.png" alt=""></div>
+            <div class="products-item-body">
+              <p class="products-item-title">【しかく指輪】海洋マイクロプラスチックを使ったハンドメイドアクセサリー/ゆびわ(全7色)</p>
+              <p class="products-item-cost">￥2,390</p>
+            </div>
+          </a>
+        </li>
+        <li class="products-item">
+          <a href="#" class="products-item-link">
+            <div class="products-item-picture"><img src="./img/product-3.png" alt=""></div>
+            <div class="products-item-body">
+              <p class="products-item-title">【ピンバッジ】海洋マイクロプラスチックを使ったsobolonオリジナルピンバッジ(全6色)</p>
+              <p class="products-item-cost">￥2,580</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="products-footer">
+        <a href="#" class="util-link">MORE</a>
+      </div>
     </section>
     <!-- /.products -->
     <section class="news">
@@ -82,7 +158,7 @@
     </section>
     <!-- /.news -->
     <section class="concept2">
-      
+
     </section>
     <!-- /.concept2 -->
     <section class="contact">
