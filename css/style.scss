@@ -99,6 +99,38 @@ main {
   margin-top: 70px;
 }
 
+.section {
+  margin-top: 160px;
+}
+
+// ------ util -------*//
+.util-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 60px;
+    background: $primary-color;
+    margin: 16px auto;
+  }
+}
+
+.util-link {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: $primary-color;
+  border: solid 1px $primary-color;
+  background: #ffffff;
+  // リンクの配置をtacで調整するためinline-block
+  display: inline-block;
+  padding: 10px 54px;
+}
+
 
 // ------- footer ---------------*/
 footer {
