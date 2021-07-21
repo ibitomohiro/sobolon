@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 767px) {
   .is-pc {
     display: none;
@@ -8,5 +9,25 @@
   .is-sp {
     display: none;
   }
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+  font-family: "ヒラギノ明朝 ProN", serif;
+  line-height: 1.6875;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 /*# sourceMappingURL=style.css.map */
