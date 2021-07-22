@@ -228,6 +228,7 @@ footer {
 
 .concept-picture {
   // flexで横はば指定することができる
+  // flexの引数 flex| flex-grow|flex-shrink|flex-basis(大きさ)
   flex: 0 0 50%;
 }
 
@@ -403,4 +404,36 @@ footer {
 .news-footer {
   text-align: center;
   margin-top: 48px;
+}
+
+// ---------- concept2 -----------*/
+
+.concept2-inner {
+  margin-top: 64px;
+  display: flex;
+  // 中央寄せ
+  align-items: center;
+  // 逆方向に表示するflexを使う
+  flex-direction: row-reverse;
+}
+
+.concept2-picture {
+  // flexで横はば指定することができる
+  // flexの引数 flex| flex-grow|flex-shrink|flex-basis(大きさ)
+  flex: 0 0 50%;
+}
+
+.concept2-message {
+  flex: 0 1 50%;
+  margin-right: 6.6667%;
+}
+
+.concept2-message-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.concept2-message-text {
+  font-weight: 300;
+  margin-top: 30px;
 }

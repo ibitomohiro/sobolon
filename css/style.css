@@ -380,4 +380,41 @@ footer {
   text-align: center;
   margin-top: 48px;
 }
+
+.concept2-inner {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.concept2-picture {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.concept2-message {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  margin-right: 6.6667%;
+}
+
+.concept2-message-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.concept2-message-text {
+  font-weight: 300;
+  margin-top: 30px;
+}
 /*# sourceMappingURL=style.css.map */
