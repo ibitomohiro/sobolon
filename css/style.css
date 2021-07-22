@@ -286,4 +286,44 @@ footer {
   font-weight: 600;
   margin-top: 40px;
 }
+
+.products {
+  max-width: 990px;
+}
+
+.products-list {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 27.6%;
+          flex: 0 0 27.6%;
+}
+
+.products-item-link {
+  display: block;
+  color: #333;
+  font-size: 14px;
+}
+
+.products-item-body {
+  margin-top: 22px;
+}
+
+.products-item-cost {
+  color: #989898;
+  margin-top: 10px;
+}
+
+.products-footer {
+  text-align: center;
+  margin-top: 44px;
+}
 /*# sourceMappingURL=style.css.map */

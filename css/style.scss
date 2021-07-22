@@ -320,3 +320,39 @@ footer {
   font-weight: 600;
   margin-top: 40px;
 }
+
+// ---------- products -----------*/
+
+.products {
+  max-width: 990px;
+}
+
+.products-list {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-item {
+  flex: 0 0 27.6%;
+}
+
+.products-item-link {
+  display: block;
+  color: $font-color;
+  font-size: 14px;
+}
+
+.products-item-body {
+  margin-top: 22px;
+}
+
+.products-item-cost {
+  color: #989898;
+  margin-top: 10px;
+}
+
+.products-footer {
+  text-align: center;
+  margin-top: 44px;
+}
