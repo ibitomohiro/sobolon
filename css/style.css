@@ -191,4 +191,37 @@ footer {
 .top-message-text {
   margin-top: 18px;
 }
+
+.concept-inner {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.concept-picture {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.concept-message {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  margin-left: 6.6667%;
+}
+
+.concept-message-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.concept-message-text {
+  font-weight: 300;
+  margin-top: 48px;
+}
 /*# sourceMappingURL=style.css.map */
