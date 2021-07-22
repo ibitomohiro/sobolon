@@ -163,4 +163,32 @@ footer {
   text-align: center;
   margin-top: 10px;
 }
+
+.top {
+  position: relative;
+}
+
+.top-picture {
+  padding-top: 55%;
+  background: url(../img/top.png) top right/82.5% no-repeat;
+}
+
+.top-message {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: #ffffff;
+  padding: 82px 44px 90px 40px;
+}
+
+.top-message-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.top-message-text {
+  margin-top: 18px;
+}
 /*# sourceMappingURL=style.css.map */
