@@ -210,69 +210,69 @@
     </section>
     <!-- /.concept2 -->
     <section class="contact">
+      <h2 class="util-title">Contact</h2>
       <form action="" class="contact-form" method="POST">
-        <h2 class="util-title">Contact</h2>
-        <p class="contact-text"><span class="contact-text-inline">＊</span>は入力必須項目です</p>
-        <dl class="contact-list">
-          <div class="contact-item">
-            <dt class="contact-item-title">
-              お名前<span class="contact-item-inline">＊</span>
-            </dt>
-            <dd class="contact-item-input">
-              <input type="text" name="" required>
-            </dd>
-          </div>
-          <div class="contact-item">
-            <dt class="contact-item-title">
-              メールアドレス<span class="contact-item-inline">＊</span>
-            </dt>
-            <dd class="contact-item-input">
-              <input type="email" name="" required>
-            </dd>
-          </div>
-          <div class="contact-item">
-            <dt class="contact-item-title">
-              法人/個人の選択<span class="contact-item-inline">＊</span>
-            </dt>
-            <dd class="contact-item-input">
-              <div class="contact-radio-wrap">
-                <label class="contact-radio">
-                  <input type="radio" name="" required>
-                  <span class="contact-radio-part">法人</span>
-                </label>
-                <label class="contact-radio">
-                  <input type="radio" name="" required>
-                  <span class="contact-radio-part">個人</span>
-                </label>
-              </div>
-            </dd>
-          </div>
-          <div class="contact-item">
-            <dt class="contact-item-title">
-              お問い合わせ内容<span class="contact-item-inline">＊</span>
-            </dt>
-            <dd class="contact-item-input">
-              <textarea name="" required></textarea>
-            </dd>
-          </div>
-        </dl>
-        <div class="contact-footer">
-          <p class="contact-footer-text">
-            <label class="contact-privacy">
-              <input type="checkbox" name="" required>
-              <span class="contac-privacy-part"></span>
-            </label>
-            <a href=" " class="contact-privacy-link" target="_blank">プライバシーポリシー</a>に同意します。
-          </p>
-          <div class="contact-footer-submit">
-            <button class="util-link -submit" type="submit">送信</button>
-          </div>
+      <p class="contact-text"><span class="contact-text-inline">＊</span>は入力必須項目です</p>
+      <dl class="contact-list">
+        <div class="contact-item">
+          <dt class="contact-item-title">
+            お名前<span class="contact-title-inline">＊</span>
+          </dt>
+          <dd class="contact-item-input">
+            <input type="text" name="" required>
+          </dd>
         </div>
+        <div class="contact-item">
+          <dt class="contact-item-title">
+            メールアドレス<span class="contact-title-inline">＊</span>
+          </dt>
+          <dd class="contact-item-input">
+            <input type="email" name="" required>
+          </dd>
+        </div>
+        <div class="contact-item">
+          <dt class="contact-item-title">
+            法人/個人の選択<span class="contact-title-inline">＊</span>
+          </dt>
+          <dd class="contact-item-input">
+            <div class="contact-radio-wrap">
+              <label class="contact-radio">
+                <!-- ラジオボタン一つは使うようにするようにcheckedを記述  -->
+                <input type="radio" name="" class="contact-radio-input" required checked>
+                <span class="contact-radio-part">法人</span>
+              </label>
+              <label class="contact-radio">
+                <input type="radio" name="" class="contact-radio-input" required>
+                <span class="contact-radio-part">個人</span>
+              </label>
+            </div>
+          </dd>
+        </div>
+        <div class="contact-item">
+          <dt class="contact-item-title">
+            お問い合わせ内容<span class="contact-title-inline">＊</span>
+          </dt>
+          <dd class="contact-item-input">
+            <textarea name="" required></textarea>
+          </dd>
+        </div>
+      </dl>
+      <div class="contact-footer">
+        <p class="contact-footer-text">
+          <label class="contact-privacy">
+            <input type="checkbox" name="" class="contact-privacy-input" required>
+            <span class="contact-privacy-part"></span>
+          </label>
+          <a href="#" class="contact-privacy-link">プライバシーポリシー</a>に同意します。
+        </p>
+        <div class="contact-footer-submit">
+          <button class="util-link -submit" type="submit">送信</button>
+        </div>
+      </div>
       </form>
     </section>
     <!-- /.contact -->
   </main>
-  
   <!-- /.main -->
   <footer class="footer">
     <div class="footer-logo"><img src="./img/logo.png" alt="sobolon"></div>
