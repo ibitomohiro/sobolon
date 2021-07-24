@@ -338,8 +338,20 @@ footer {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .feature {
+    max-width: 340px;
+  }
+}
+
 .feature-list {
   margin-top: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-list {
+    margin-top: 46px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -361,6 +373,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .feature-item + .feature-item {
+    margin-top: 49px;
+  }
+}
+
 .feature-item-link {
   display: block;
   color: #333;
@@ -376,10 +394,22 @@ footer {
 }
 
 .about {
-  background: url(../img/hugebg.png) center center/cover;
   color: #ffffff;
   position: relative;
   padding: 120px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    background: url(../img/bg-sm.png) center center/cover;
+    padding: 176px 0 52px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    background: url(../img/hugebg.png) center center/cover;
+  }
 }
 
 .about::before {
@@ -402,9 +432,21 @@ footer {
   font-weight: 600;
 }
 
+@media screen and (max-width: 767px) {
+  .about-title {
+    font-size: 20px;
+  }
+}
+
 .about-text {
   font-weight: 600;
   margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-text {
+    font-size: 14px;
+  }
 }
 
 .products {

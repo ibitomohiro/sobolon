@@ -328,12 +328,20 @@ footer {
 }
 
 // ---------- feature -----------*/
+// スマホサイズでは340px以上広がらないようにする
 .feature {
-
+  @include mq(sm) {
+    max-width: 340px;
+  }
 }
 
 .feature-list {
   margin-top: 64px;
+
+  @include mq(sm) {
+    margin-top: 46px;
+  }
+
   @include mq(md) {
     display: flex;
     justify-content: space-between;
@@ -344,6 +352,12 @@ footer {
 .feature-item {
   @include mq(md) {
     flex: 0 0 28.3333%;
+  }
+
+  & + & {
+    @include mq(sm) {
+      margin-top: 49px;
+    }
   }
 }
 
@@ -374,11 +388,19 @@ footer {
 // ---------- about -----------*/
 
 .about {
-  background: url(../img/hugebg.png) center center / cover;
   // 画像が明るすぎるので疑似要素を使って暗いカバーを用意する
   color: #ffffff;
   position: relative;
   padding: 120px 0;
+  @include mq(sm) {
+    background: url(../img/bg-sm.png) center center / cover;
+    padding: 176px 0 52px;
+  }
+
+  @include mq(md) {
+    background: url(../img/hugebg.png) center center / cover;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -399,11 +421,19 @@ footer {
 .about-title {
   font-size: 22px;
   font-weight: 600;
+
+  @include mq(sm) {
+    font-size: 20px;
+  }
 }
 
 .about-text {
   font-weight: 600;
   margin-top: 40px;
+
+  @include mq(sm) {
+    font-size: 14px;
+  }
 }
 
 // ---------- products -----------*/
