@@ -144,13 +144,17 @@ footer {
 }
 
 .footer-nav-list {
-  display: flex;
-  justify-content: center;
+  @include mq(md) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-nav-item {
   & + & {
-    margin-left: 30px;
+    @include mq(md) {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -220,8 +224,10 @@ footer {
 // ---------- concept -----------*/
 
 .concept-inner {
-  margin-top: 64px;
-  display: flex;
+  @include mq(md) {
+    margin-top: 64px;
+    display: flex;
+  }
   // 中央寄せ
   align-items: center;
 }
@@ -229,12 +235,16 @@ footer {
 .concept-picture {
   // flexで横はば指定することができる
   // flexの引数 flex| flex-grow|flex-shrink|flex-basis(大きさ)
-  flex: 0 0 50%;
+  @include mq(md) {
+    flex: 0 0 50%;
+  }
 }
 
 .concept-message {
-  flex: 0 1 50%;
-  margin-left: 6.6667%;
+  @include mq(md) {
+    flex: 0 1 50%;
+    margin-left: 6.6667%;
+  }
 }
 
 .concept-message-title {
@@ -253,14 +263,18 @@ footer {
 }
 
 .feature-list {
-  display: flex;
-  justify-content: space-between;
   margin-top: 64px;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 
 }
 
 .feature-item {
-  flex: 0 0 28.3333%;
+  @include mq(md) {
+    flex: 0 0 28.3333%;
+  }
 }
 
 .feature-item-link {
@@ -330,12 +344,16 @@ footer {
 
 .products-list {
   margin-top: 64px;
-  display: flex;
-  justify-content: space-between;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .products-item {
-  flex: 0 0 27.6%;
+  @include mq(md) {
+    flex: 0 0 27.6%;
+  }
 }
 
 .products-item-link {
@@ -358,7 +376,7 @@ footer {
   margin-top: 44px;
 }
 
-// ---------- products -----------*/
+// ---------- News -----------*/
 
 .news {
   max-width: 1040px;
@@ -373,20 +391,26 @@ footer {
 }
 
 .news-item-link {
-  display: flex;
-  align-items: center;
   color: $font-color;
   font-size: 14px;
   padding: 22px 0;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .news-item-header {
-  flex: 0 0 260px;
+  @include mq(md) {
+    flex: 0 0 260px;
+  }
 }
 
 .news-item-body {
-  flex: 0 1 100%;
-  margin-left: 40px;
+  @include mq(md) {
+    flex: 0 1 100%;
+    margin-left: 40px;
+  }
 }
 
 .news-item-title {
@@ -410,22 +434,29 @@ footer {
 
 .concept2-inner {
   margin-top: 64px;
-  display: flex;
-  // 中央寄せ
-  align-items: center;
-  // 逆方向に表示するflexを使う
-  flex-direction: row-reverse;
+
+  @include mq(md) {
+    display: flex;
+    // 中央寄せ
+    align-items: center;
+    // 逆方向に表示するflexを使う
+    flex-direction: row-reverse;
+  }
 }
 
 .concept2-picture {
   // flexで横はば指定することができる
   // flexの引数 flex| flex-grow|flex-shrink|flex-basis(大きさ)
-  flex: 0 0 50%;
+  @include mq(md) {
+    flex: 0 0 50%;
+  }
 }
 
 .concept2-message {
-  flex: 0 1 50%;
-  margin-right: 6.6667%;
+  @include mq(md) {
+    flex: 0 1 50%;
+    margin-right: 6.6667%;
+  }
 }
 
 .concept2-message-title {
@@ -495,14 +526,15 @@ footer {
 }
 
 .contact-item {
-  display: flex;
+  @include mq(md) {
+    display: flex;
+  }
   & + & {
     margin-top: 32px;
   }
 }
 
 .contact-item-title {
-  flex: 0 1 100%;
   background: #3EA1D1B3;
   color: #ffffff;
   font-size: 18px;
@@ -511,6 +543,11 @@ footer {
   text-align: center;
   padding-left: 10px;
   position: relative;
+
+  @include mq(md) {
+    flex: 0 1 100%;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -531,8 +568,10 @@ footer {
 }
 
 .contact-item-input {
-  flex: 0 0 320px;
-  margin-left: 18px;
+  @include mq(md) {
+    flex: 0 0 320px;
+    margin-left: 18px;
+  }
 }
 
 .contact-radio-wrap {
