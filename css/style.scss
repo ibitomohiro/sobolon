@@ -51,6 +51,10 @@ img {
   padding: 0 40px;
   // 現在の状態だとリセットCSSが聞いていて、paddingも含めて1200px実際は1180pxなのでbox-sizingをデフォルト値に戻す
   box-sizing: content-box;
+  // スマホサイズのインナーを調整
+  @include mq(sm) {
+    padding: 0 15px;
+  }
 }
 
 // ---- header ------ //
@@ -66,6 +70,10 @@ img {
 .header-inner {
   display: flex;
   align-items: center;
+
+  @include mq(sm) {
+    height: 60px;
+  }
 }
 
 .header-logo {
@@ -97,10 +105,18 @@ img {
 
 main {
   margin-top: 70px;
+
+  @include mq(sm) {
+    padding-top: 60px;
+  }
 }
 
 .section {
   margin-top: 160px;
+
+  @include mq(sm) {
+    margin-top: 96px;
+  }
 }
 
 // ------ util -------*//
@@ -109,6 +125,10 @@ main {
   font-weight: 700;
   text-align: center;
   line-height: 1;
+
+  @include mq(sm) {
+    font-size: 30px;
+  }
 
   &::after {
     content: "";
@@ -136,6 +156,10 @@ main {
 footer {
   background: #f7f7f7;
   padding: 42px 40px 12px;
+
+  @include mq(sm) {
+    padding: 36px 0 14px;
+  }
 }
 
 .footer-logo {
@@ -144,6 +168,13 @@ footer {
 }
 
 .footer-nav-list {
+  margin-top: 8px;
+
+  @include mq(sm) {
+    text-align: center;
+    margin-top: 16px;
+  }
+
   @include mq(md) {
     display: flex;
     justify-content: center;
@@ -163,11 +194,18 @@ footer {
   color: $font-color;
   display: block;
   padding: 1em 0;
-  
+
+  @include mq(sm) {
+    padding: 0.3em 0;
+  }
 }
 
 .footer-sns-list {
   text-align: center;
+
+  @include mq(sm) {
+    margin-top: 14px;
+  }
 }
 
 .footer-sns-item {
@@ -190,6 +228,10 @@ footer {
   font-size: 12px;
   text-align: center;
   margin-top: 10px;
+
+  @include mq(sm) {
+    margin-top: 5px;
+  }
 }
 
 // ---------- top -----------*/
@@ -199,17 +241,32 @@ footer {
 }
 
 .top-picture {
-  padding-top: 55%;
-  background: url(../img/top.png) top right /82.5% no-repeat ;
+  @include mq(sm) {
+    // 424 / 345 
+    padding-top: 120%;
+    // 右寄せを治す + カバーで全体表示
+    background: url(../img/top-sp.png) center center /cover;
+  }
+
+  @include mq(md) {
+    padding-top: 55%;
+    background: url(../img/top.png) top right /82.5% no-repeat;
+  }
 }
 
 .top-message {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #ffffff;
-  padding: 82px 44px 90px 40px;
+  @include mq(sm) {
+    margin-top: 31px;
+  }
+
+  @include mq(md) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    padding: 82px 44px 90px 40px;
+  }
 }
 
 .top-message-title {
@@ -224,12 +281,17 @@ footer {
 // ---------- concept -----------*/
 
 .concept-inner {
-  @include mq(md) {
-    margin-top: 64px;
-    display: flex;
+  margin-top: 64px;
+
+  @include mq(sm) {
+    margin-top: 46px;
   }
-  // 中央寄せ
-  align-items: center;
+
+  @include mq(md) {
+    display: flex;
+    // 中央寄せ
+    align-items: center;
+  }
 }
 
 .concept-picture {
@@ -241,6 +303,10 @@ footer {
 }
 
 .concept-message {
+  @include mq(sm) {
+    margin-top: 35px;
+  }
+
   @include mq(md) {
     flex: 0 1 50%;
     margin-left: 6.6667%;
@@ -255,6 +321,10 @@ footer {
 .concept-message-text {
   font-weight: 300;
   margin-top: 48px;
+
+  @include mq(sm) {
+    margin-top: 20px;
+  }
 }
 
 // ---------- feature -----------*/
