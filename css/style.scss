@@ -975,3 +975,13 @@ footer {
     margin-top: 24px;
   }
 }
+
+.contact-message {
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+
+  &.-error {
+    color: #f00;
+  }
+}

@@ -211,7 +211,7 @@
     <!-- /.concept2 -->
     <section id="contact" class="contact">
       <h2 class="util-title wow fadeInUp">Contact</h2>
-      <form action="" class="contact-form wow fadeInUp" method="POST">
+      <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScDUHyd7De934mth2yBXht8UdH3Pbx1g_zSlVwmGjF9a4j69Q/formResponse" class="contact-form wow fadeInUp" method="POST">
       <p class="contact-text"><span class="contact-text-inline">＊</span>は入力必須項目です</p>
       <dl class="contact-list">
         <div class="contact-item">
@@ -219,7 +219,7 @@
             お名前<span class="contact-title-inline">＊</span>
           </dt>
           <dd class="contact-item-input">
-            <input type="text" name="" required>
+            <input type="text" name="entry.381156520" required>
           </dd>
         </div>
         <div class="contact-item">
@@ -227,7 +227,7 @@
             メールアドレス<span class="contact-title-inline">＊</span>
           </dt>
           <dd class="contact-item-input">
-            <input type="email" name="" required>
+            <input type="email" name="emailAddress" required>
           </dd>
         </div>
         <div class="contact-item">
@@ -238,11 +238,11 @@
             <div class="contact-radio-wrap">
               <label class="contact-radio">
                 <!-- ラジオボタン一つは使うようにするようにcheckedを記述  -->
-                <input type="radio" name="" class="contact-radio-input" required checked>
+                <input type="radio" name="entry.1699928914" class="contact-radio-input" value="法人" required checked>
                 <span class="contact-radio-part">法人</span>
               </label>
               <label class="contact-radio">
-                <input type="radio" name="" class="contact-radio-input" required>
+                <input type="radio" name="entry.1699928914" class="contact-radio-input" value="個人" required>
                 <span class="contact-radio-part">個人</span>
               </label>
             </div>
@@ -253,14 +253,14 @@
             お問い合わせ内容<span class="contact-title-inline">＊</span>
           </dt>
           <dd class="contact-item-input">
-            <textarea name="" required></textarea>
+            <textarea name="entry.1118909817" required></textarea>
           </dd>
         </div>
       </dl>
       <div class="contact-footer">
         <p class="contact-footer-text">
           <label class="contact-privacy">
-            <input type="checkbox" name="" class="contact-privacy-input" required>
+            <input type="checkbox" name="entry.1161216045" class="contact-privacy-input" value="プライバシーポリシーの同意" required>
             <span class="contact-privacy-part"></span>
           </label>
           <a href="#" class="contact-privacy-link">プライバシーポリシー</a>に同意します。
@@ -270,6 +270,13 @@
         </div>
       </div>
       </form>
+      <iframe name="dummyIframe" style="display:none;"></iframe>
+      <div id="js-success" class="contact-message">
+        <p>送信完了しました。ありがとうございました</p>
+      </div>
+      <div id="js-error" class="contact-message -error">
+        <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+      </div>
     </section>
     <!-- /.contact -->
   </main>
