@@ -434,6 +434,7 @@ footer {
   @include mq(sm) {
     font-size: 14px;
     margin-top: 22px;
+    line-height: 1.1743;
   }
 }
 
@@ -571,7 +572,6 @@ footer {
 // ---------- concept2 -----------*/
 
 .concept2-inner {
-  margin-top: 64px;
 
   @include mq(md) {
     display: flex;
@@ -591,6 +591,9 @@ footer {
 }
 
 .concept2-message {
+  @include mq(sm) {
+    margin-top: 34px;
+  }
   @include mq(md) {
     flex: 0 1 50%;
     margin-right: 6.6667%;
@@ -599,12 +602,18 @@ footer {
 
 .concept2-message-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: bold;
+  @include mq(sm) {
+    font-size: 20px;
+  }
 }
 
 .concept2-message-text {
-  font-weight: 300;
   margin-top: 30px;
+  @include mq(sm) {
+    font-size: 14px;
+    line-height: 1.7143;
+  }
 }
 
 // ---------- Contact -----------*/

@@ -447,6 +447,7 @@ footer {
   .about-text {
     font-size: 14px;
     margin-top: 22px;
+    line-height: 1.1743;
   }
 }
 
@@ -572,6 +573,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .news-item-body {
+    margin-top: 21px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .news-item-body {
     -webkit-box-flex: 0;
@@ -587,6 +594,12 @@ footer {
   margin-top: 4px;
 }
 
+@media screen and (max-width: 767px) {
+  .news-item-title {
+    font-size: 16px;
+  }
+}
+
 .news-item-text {
   color: #888888;
   margin-top: 16px;
@@ -596,10 +609,6 @@ footer {
 .news-footer {
   text-align: center;
   margin-top: 48px;
-}
-
-.concept2-inner {
-  margin-top: 64px;
 }
 
 @media screen and (min-width: 768px) {
@@ -625,6 +634,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .concept2-message {
+    margin-top: 34px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .concept2-message {
     -webkit-box-flex: 0;
@@ -636,12 +651,24 @@ footer {
 
 .concept2-message-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .concept2-message-title {
+    font-size: 20px;
+  }
 }
 
 .concept2-message-text {
-  font-weight: 300;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .concept2-message-text {
+    font-size: 14px;
+    line-height: 1.7143;
+  }
 }
 
 .contact {
