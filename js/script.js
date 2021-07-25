@@ -46,4 +46,19 @@ $form.submit(function(e) {
 
   return false;
   });
+// formの入力確認
+  let $submit = $('#js-submit')
+  $('#js-form input, #js-form textarea').on('change', function() {
+    if(
+      $('#js-form input[type="text"]').val() !== "" &&
+      $('#js-form input[type="email"]').val() !== "" &&
+      $('#js-form input[name="entry.1161216045"]').prop('checked') === true
+    ) {
+      $submit.prop('disabled', false)
+      $submit.addClass('-active')
+    } else {
+      $submit.prop('disabled', true)
+      $submit.removeClass('-active')
+    }
+  })
 })
