@@ -19,5 +19,7 @@ $(function(){
     );
     return false;
   });
+  // wowjs
+  new WOW().init()
 });
 
