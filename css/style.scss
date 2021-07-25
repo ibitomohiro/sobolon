@@ -433,17 +433,28 @@ footer {
 
   @include mq(sm) {
     font-size: 14px;
+    margin-top: 22px;
   }
 }
 
 // ---------- products -----------*/
 
 .products {
-  max-width: 990px;
+  max-width: 940px;
+
+  @include mq(sm) {
+    max-width: 340px;
+    padding: 0 58px;
+  }
 }
 
 .products-list {
   margin-top: 64px;
+
+  @include mq(sm) {
+    margin-top: 48px;
+  }
+
   @include mq(md) {
     display: flex;
     justify-content: space-between;
@@ -451,6 +462,11 @@ footer {
 }
 
 .products-item {
+  & + & {
+    @include mq(sm) {
+      margin-top: 40px;
+    }
+  }
   @include mq(md) {
     flex: 0 0 27.6%;
   }
@@ -474,16 +490,28 @@ footer {
 .products-footer {
   text-align: center;
   margin-top: 44px;
+
+  @include mq(sm) {
+    margin-top: 42px;
+  }
 }
 
 // ---------- News -----------*/
 
 .news {
   max-width: 1040px;
+
+  @include mq(sm) {
+    padding: 0 32px;
+  }
 }
 
 .news-list {
   margin-top: 28px;
+
+  @include mq(sm) {
+    margin-top: 25px;
+  }
 }
 
 .news-item {
@@ -494,6 +522,8 @@ footer {
   color: $font-color;
   font-size: 14px;
   padding: 22px 0;
+  display: block;
+
   @include mq(md) {
     display: flex;
     align-items: center;
@@ -507,6 +537,10 @@ footer {
 }
 
 .news-item-body {
+  @include mq(sm) {
+    margin-top: 21px;
+  }
+
   @include mq(md) {
     flex: 0 1 100%;
     margin-left: 40px;
@@ -517,6 +551,10 @@ footer {
   font-size: 18px;
   font-weight: 600;
   margin-top: 4px;
+
+  @include mq(sm) {
+    font-size: 16px;
+  }
 }
 
 .news-item-text {
