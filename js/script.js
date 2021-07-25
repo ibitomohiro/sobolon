@@ -1,0 +1,4 @@
+$(function(){
+// drawerjs
+  $('.drawer').drawer()
+});

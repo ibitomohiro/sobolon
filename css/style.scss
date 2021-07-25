@@ -65,6 +65,25 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
+
+  .drawer-hamburger {
+    .drawer--right & {
+      right: 3px;
+    }
+  }
+
+  .drawer-hamburger-icon {
+    background: $primary-color;
+    // drawer-openのクラスに対してメニューが開いたときに透明を指定する
+    .drawer-open & {
+      background: transparent;
+    }
+
+    &::before,
+    &::after {
+      background: $primary-color;
+    }
+  }
 }
 
 .header-inner {
@@ -82,15 +101,26 @@ img {
 
 .header-nav {
   margin-left: auto;
+
+  @include mq(sm) {
+    // メニューを開いたときにロゴと被らないように少し下に表示させる
+    top: 60px;
+    background-color: $primary-color;
+    padding: 24px 0;
+  }
 }
 
 .header-nav-list {
-  display: flex;
+  @include mq(md) {
+    display: flex;
+  }
 }
 
 .header-nav-item {
   & + & {
-    margin-left: 46px;
+    @include mq(md) {
+      margin-left: 46px;
+    }
   }
 }
 
@@ -101,6 +131,21 @@ img {
   height: 70px;
   line-height: 70px;
   letter-spacing: 0.1em;
+  @include mq(sm) {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: right;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  @include mq(md) {
+    transition: color 0.4s;
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
 
 main {
@@ -149,6 +194,23 @@ main {
   // リンクの配置をtacで調整するためinline-block
   display: inline-block;
   padding: 10px 54px;
+  transition: background-color 0.4s, color 0.4s;
+
+  //inputをすべて入力したときに色が反転するようにする。
+  &.-active {
+    background: $primary-color;
+    color: #ffffff;
+  }
+
+  @include mq(md) {
+    // submitのボタンは変えないで良いのでnotでコーディングする
+    &:not(.-submit) {
+      &:hover {
+        background: $primary-color;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 
@@ -198,6 +260,13 @@ footer {
   @include mq(sm) {
     padding: 0.3em 0;
   }
+
+  @include mq(md) {
+    transition: opacity 0.4s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .footer-sns-list {
@@ -221,6 +290,13 @@ footer {
   font-size: 24px;
   display: block;
   padding: 0.1em 0.5em;
+
+  @include mq(md) {
+    transition: opacity 0.4s;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .footer-copyright {
@@ -367,11 +443,20 @@ footer {
   background: #ffffff;
   // カラーコードを見るためにrgbaに合わせて色を見る
   box-shadow: 3px 3px 15px rgba(96, 96, 96, 0.16);
+
+  @include mq(md) {
+    &:hover {
+      .feature-item-picture > img {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
 
 .feature-item-picture {
-  img {
-
+  overflow: hidden;
+  > img {
+    transition: transform 0.4s;
   }
 }
 
@@ -477,6 +562,22 @@ footer {
   display: block;
   color: $font-color;
   font-size: 14px;
+
+  @include mq(md) {
+    &:hover {
+      .products-item-picture > img {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.products-item-picture {
+  overflow: hidden;
+
+  > img {
+    transition: transform 0.4s;
+  }
 }
 
 .products-item-body {
@@ -528,12 +629,34 @@ footer {
   @include mq(md) {
     display: flex;
     align-items: center;
+
+    &:hover {
+      .news-item-picture > img {
+        transform: translate(-50%, -50%)scale(1.05);
+      }
+    }
   }
 }
 
 .news-item-header {
   @include mq(md) {
     flex: 0 0 260px;
+  }
+}
+
+// 挿入した画像のサイズが違っていても画角を合わせるようにコーディング
+.news-item-picture {
+  padding-top: 61.5385%;
+  position: relative;
+  overflow: hidden;
+
+  >img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.4s;
   }
 }
 
@@ -783,6 +906,7 @@ footer {
   line-height: 38px;
   width: 80px;
   text-align: center;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .contact-footer {
@@ -835,6 +959,8 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+
+  transition: all 0.2s;
 }
 
 
