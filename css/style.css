@@ -677,6 +677,13 @@ footer {
   padding: 72px 40px 86px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    margin-top: 92px;
+    padding: 56px 28px;
+  }
+}
+
 .contact .util-title {
   color: #3EA1D1;
 }
@@ -705,6 +712,12 @@ footer {
 
 .contact-form {
   margin-top: 56px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-form {
+    margin-top: 26px;
+  }
 }
 
 .contact-text {
@@ -750,6 +763,16 @@ footer {
   position: relative;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-item-title {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact-item-title {
     -webkit-box-flex: 0;
@@ -758,15 +781,17 @@ footer {
   }
 }
 
-.contact-item-title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: -8px;
-  border-style: solid;
-  border-width: 20px 0 20px 8px;
-  border-color: transparent transparent transparent #3EA1D1B3;
+@media screen and (min-width: 768px) {
+  .contact-item-title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -8px;
+    border-style: solid;
+    border-width: 20px 0 20px 8px;
+    border-color: transparent transparent transparent #3EA1D1B3;
+  }
 }
 
 .contact-title-inline {
@@ -774,6 +799,18 @@ footer {
   color: #E7728E;
   vertical-align: super;
   line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-title-inline {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-item-input {
+    margin-top: 3px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -831,6 +868,12 @@ footer {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-footer {
+    margin-top: 14px;
+  }
+}
+
 .contact-privacy {
   position: relative;
   height: 22px;
@@ -883,5 +926,11 @@ footer {
 
 .contact-footer-submit {
   margin-top: 46px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-footer-submit {
+    margin-top: 24px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

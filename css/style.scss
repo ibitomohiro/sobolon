@@ -623,6 +623,11 @@ footer {
   margin-top: 225px;
   // 左右はインナーの幅と同じ
   padding: 72px 40px 86px;
+  
+  @include mq(sm) {
+    margin-top: 92px;
+    padding: 56px 28px;
+  }
   .util-title {
     color: $primary-color;
   }
@@ -650,6 +655,10 @@ footer {
 
 .contact-form {
   margin-top: 56px;
+
+  @include mq(sm) {
+    margin-top: 26px;
+  }
 }
 
 .contact-text {
@@ -691,19 +700,29 @@ footer {
   padding-left: 10px;
   position: relative;
 
+  @include mq(sm) {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    height: 32px;
+    padding: 0 16px;
+  }
+
   @include mq(md) {
     flex: 0 1 100%;
   }
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: -8px;
-    border-style: solid;
-    border-width: 20px 0 20px 8px;
-    border-color: transparent transparent transparent #3EA1D1B3;
+// 三角の部分をPC表示のみにする
+  @include mq(md) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -8px;
+      border-style: solid;
+      border-width: 20px 0 20px 8px;
+      border-color: transparent transparent transparent #3EA1D1B3;
+    }
   }
 }
 
@@ -712,9 +731,17 @@ footer {
   color: #E7728E;
   vertical-align: super;
   line-height: 1;
+
+  @include mq(sm) {
+    font-size: 10px;
+  }
 }
 
 .contact-item-input {
+  @include mq(sm) {
+    margin-top: 3px;
+  }
+
   @include mq(md) {
     flex: 0 0 320px;
     margin-left: 18px;
@@ -757,9 +784,13 @@ footer {
   width: 80px;
   text-align: center;
 }
+
 .contact-footer {
   text-align: center;
   margin-top: 20px;
+  @include mq(sm) {
+    margin-top: 14px;
+  }
 }
 
 .contact-privacy {
@@ -814,4 +845,7 @@ footer {
 
 .contact-footer-submit {
   margin-top: 46px;
+  @include mq(sm) {
+    margin-top: 24px;
+  }
 }
